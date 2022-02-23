@@ -1,0 +1,486 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap');
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(219, 208, 208);
+}
+.text-aline{
+  text-align: center;
+}
+.container{
+  margin: 0 auto;
+  width: 90%;
+}
+
+.container::after{
+  display: block;
+  content: '';
+  clear: both;
+  margin: 50px 10px;
+}
+
+/* ===========================
+    end common code
+========================== */
+
+header{
+  background: url(img/pexels-irina-iriser-1408221.jpg);
+  width: 100%;
+  margin-bottom: 100px;
+  height: 100vh;
+  background-position: center;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header::after{
+  clear: both;
+  content: '';
+  display: block;
+}
+
+.main-head{
+  min-height:80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo label{
+  font-weight: 900;
+  font-size: 2.3rem;
+  font-style: italic;
+  letter-spacing: .3em;
+  color: rgb(255, 255, 255);
+}
+nav ul{
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+nav ul li{
+  list-style: none;
+  position: relative;
+  margin: 0px 14px;
+}
+nav ul li::after{
+  position: absolute;
+  width: 0%;
+  content: '';
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+  background-color: aqua;
+}
+
+nav ul li:hover::after{
+  width: 100%;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.navBar i{
+  display: none;
+}
+.text-area{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 50%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  transform: translate(-50%,-50%);
+}
+.text-area h1{
+  font-size: 3rem;
+  padding: 20px 0px;
+}
+.text-area p{
+  font-size: 1.3rem;
+  margin: 0 auto;
+  width: 70%;
+  color: rgb(216, 216, 216);
+}
+
+.text-area .click{
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  margin-top: 2rem;
+  display: inline-block;
+  font-size: 20px;
+  padding: 10px 14px;
+  border: 2.2px solid white;
+  transition: 0.3s all ease-in;
+}
+
+.click:hover{
+  border-color:aqua;
+  color: aqua;
+  width: 210px;
+}
+
+/* ========================
+      header end
+======================== */
+#section-card{
+  min-height:100vh;
+}
+
+.main-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+}
+.card{
+  width: 29%;
+  height: 650px;
+  background-color: antiquewhite;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 3px 1px 8px #b1a3a3;
+  transition: 0.3s all;
+}
+
+.card:hover{
+  box-shadow: 3px 4px 12px #797676;
+}
+.card img{
+  width: 100%;
+  height: 60%;
+}
+.card h2{
+  text-align: center;
+  font-size: 33px;
+  text-transform: uppercase;
+  padding: 3px 0px;
+  color: rgb(3, 21, 99);
+}
+.h1{
+  font-size: 38px;
+  margin-bottom: 76px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.h1::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 300px;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%,90%);
+  height: 4px;
+  bottom: -14px;
+  text-align: center;
+  background-color: #7e25a3;
+}
+.card p{
+  font-size: 18px;
+  line-height: 1.6rem;
+  color: rgb(65, 70, 68);
+  margin-top: 16px;
+}
+.text-are{
+  padding: 25px;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+
+/* ================================================================
+        Card section end
+================================================================ */
+
+
+
+#contract-section{
+}
+
+.main-contract{
+  background-color: #110f0f;
+  color: yellow;
+  padding: 30px 30px 520px 30px;
+  height: 80vh;
+  margin-top: 100px;
+  overflow: hidden;
+  height: 100vh;
+}
+.main-contract::after{
+display: block;
+clear: both;
+content: '';
+}
+.main-contract h3{
+  font-size: 2.4rem;
+  padding: 30px 0px;
+}
+
+form{
+  margin: 30px 0px;
+  padding: 0px 20px;
+  position: relative;
+}
+form::after{
+  clear: both;
+  content: '';display: table;
+}
+.left-side{
+  width: 55%;
+  text-align: center;
+  margin: 0 auto;
+}
+.box{
+  width: 100%;
+  position: relative;
+
+}
+.mese{
+  position: absolute;
+  z-index: 2;
+  left: 60px;
+}
+.box p{
+  font-size: 24px;
+  padding-bottom: 54px;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+.box input,textarea{
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  width: 270px;
+  border-radius: 20px;
+  background-color: #494545;
+}
+textarea{
+  position: absolute;
+  left: 210px;
+  top:-5px;
+}
+::placeholder{
+  color: yellow;
+  font-size: 16px;
+
+}
+
+.sub-btn{
+  border: none;
+  padding: 10px 14px ;
+  width: 140px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+  background-color: yellow;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  top:170%;
+  font-weight: 800;
+  margin: 30px 0px;
+  cursor: pointer;
+  font-size: 17px;
+  transform: translate(-50%,-50%);
+}
+
+
+/* =========================================== */
+
+
+footer{
+  background: #26252b;
+  width: 100%;
+  padding: 20px;
+  
+}
+.main-footer{
+ margin: 0 auto;
+ width: 100%; 
+ color: rgb(139, 131, 131);
+ text-align: center;
+ padding: 40px 0px;
+}
+.socail-links i{
+  color: gray;
+  margin: 20px 4px;
+  font-size: 24px;
+  display:inline-block;
+  width: 70px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.socail-links i:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+/* ========= media screen and max-width ================= */
+
+@media (max-width:700px) {
+  .logo label{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    letter-spacing: .2em;
+  }
+  nav{
+    background-color: rgb(41, 30, 30);
+    height: 100vh;
+    position: absolute;
+    z-index: 4;
+    right: 0;
+    text-align: center;
+    top: -100%;
+    width: 100%;
+    border-bottom-right-radius:10% ;
+    transition: 0.4s;
+  }
+  nav ul {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  nav ul li{
+    margin: 15px 0px;
+  }
+
+  
+  nav ul li::after{
+background: transparent;
+  }
+  nav ul li:hover::after{
+ background: transparent;
+  }
+  nav ul li a{
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  nav ul a:hover{
+    color: rgb(202, 159, 102);
+  }
+  .fa-xmark{
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    right: 7%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  .fa-bars{
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+  }
+ 
+  .navBar i{
+    display: block;
+  }
+
+  .text-area{
+    position: absolute;
+    top: 50%;
+    width: 98%;
+  }
+
+  .text-area h1{
+    font-size: 2.3rem;
+  }
+
+  .text-area p{
+    font-size: 1.2rem;
+    width: 90%;
+  }
+  /* ====================header end======================= */
+
+
+  .main-area{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  .h1{
+    font-size: 30px;
+  }
+
+  .h1::after {
+    width: 50%;
+  }
+
+  .card{
+    width: 96%;
+    margin-bottom: 29px;
+  }
+  /* ================================== */
+
+  .main-contract{
+    padding: 30px 30px 520px 30px;
+    text-align: left;
+    margin-top: 100px;
+  
+  }
+  .main-contract h3{
+    font-size: 2rem;
+    padding: 0px 0px;
+  }
+  .left-side{
+    width: 100%;
+    text-align: left;
+    clear: both;
+  }
+  .box{
+    margin: 20px 0px;
+  }
+  .box p{
+    font-size: 20px;
+    margin: 0px 0px;
+    display: block;
+    padding: 22px 0px;
+    margin-bottom: 0px;
+  }
+  .box input,textarea{
+    width:80%;
+    background-color: #494545;
+  }
+
+  textarea{
+    left: 0px;
+    top:80px;
+  }
+  .mese{
+    left: 0px;
+  }
+
+
+
+  .socail-links i{
+    margin: 20px 4px;
+    font-size: 20px;
+    width: 40px;
+  }
+  .socail-links i:hover{
+    transform: scale(1.1);
+  }
+  
+}

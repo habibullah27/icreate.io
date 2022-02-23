@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>demo</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script src="https://kit.fontawesome.com/e19482ea6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header id="home">
+  <div class="container">
+
+      <div class="main-head">
+
+        <div class="logo">
+            <label for="LOGO">LOGO <img src="img/Untitled design (1).png" alt=""></label>
+        </div>
+
+        <div class="navBar">
+
+          <nav id="toggle">
+          <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#section-card">Card</a></li>
+                <li><a href="#contract-section">Contract</a></li>
+                <li><a href="#">End</a></li>
+              </ul>
+          </nav>
+          <i class="fa-solid fa-bars" onclick="show()"></i>
+        </div>
+
+      </div>
+      <!-- ======= -->
+
+
+      <div class="text-area">
+            <h1  style="color: rgb(243, 255, 82);">My Name Is <span style="color: aqua;">Tareq Aziz</span> </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium eaque quisquam rem minus libero? Blanditiis veritatis temporibus nulla vel necessitatibus!</p>
+            <a href="#" class="click">Click Here</a>
+      </div>
+  </div>
+</header>
+
+<!-- 
+===========================
+    Header ENd
+=========================== -->
+
+
+<main>
+
+
+
+  <section id="section-card">
+
+      <div class="container">
+
+           <h1 class="h1 text-aline">Welcome To Our Services</h1>
+
+          <div class="main-area">
+
+              <div class="card">
+                <img src="img/card 1.jpg" alt="">
+
+                <div class="text-are">
+                  <h2>Card 1</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, fugit tempora dignissimos delectus minus cum repellat dolor, ea numquam accusantium consequuntur! Voluptatem repudiandae ex fuga harum?</p>
+                </div>
+                 
+              </div>
+
+
+
+
+
+
+
+
+              <div class="card">
+                <img src="img/card 2.jpg" alt="">
+
+                <div class="text-are">
+                  <h2>Card 2</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, fugit tempora dignissimos delectus minus cum repellat dolor, ea numquam accusantium consequuntur! Voluptatem repudiandae ex fuga harum?</p>
+                </div>
+                 
+              </div>
+
+
+
+
+
+
+
+
+              <div class="card">
+                <img src="img/card 3.jpg" alt="">
+
+                <div class="text-are">
+                  <h2>Card 3</h2>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci, fugit tempora dignissimos delectus minus cum repellat dolor, ea numquam accusantium consequuntur! Voluptatem repudiandae ex fuga harum?</p>
+                </div>
+                 
+              </div>
+
+
+            
+          </div>
+
+      </div>
+
+  </section>
+
+<!-- ===================================================
+
+          Card Section End
+=================================================== -->
+
+
+
+
+
+
+<section id="contract-section">
+
+    <!-- <div class="container"> -->
+
+        <div class="main-contract">
+
+              <h3 class="text-aline">Contract US</h3>
+
+            <div class="form-area">
+              <form>
+
+                <div class="left-side">
+                      <div class="box">
+                        <p>Enter Your Name : </p>
+                        <input type="text" placeholder="Enter Your Name">    
+                      </div>
+                       
+                      <div class="box" >
+
+                        <p>Enter Your Email: </p>
+                        <input type="email" placeholder="Enter Your Email">
+  
+                      </div>
+                  
+                      <div class="box">
+                        <p class="mese">Message: </p>
+                        <textarea  cols="12" rows="3" placeholder="Write Your Message"></textarea>
+                      </div>
+
+                </div>
+
+
+                  <button class="sub-btn" type="submit">Submit</button>
+   
+                </div>
+              </form>
+            </div>
+
+
+
+
+
+        <!-- </div> -->
+
+    </div>
+
+
+</section>
+
+</main>
+
+<!-- ======================== main end================== -->
+
+
+<footer>
+    <div class="main-footer">
+
+
+      <p>Made By Habib Ullah Tareq Aziz</p>
+
+      <div class="socail-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+
+
+
+    </div>
+</footer>
+
+<!-- ========================================= -->
+<!-- ========================================= -->
+
+<script>
+
+let  navbar =document.getElementById("toggle");
+
+function show() {
+  navbar.style.top="0px"
+}
+
+function hidemenu(){
+  navbar.style.top="-100%"
+}
+
+</script>
+  
+</body>
+</html>
